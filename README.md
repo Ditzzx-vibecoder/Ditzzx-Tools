@@ -47,18 +47,18 @@ Generate konten visual secara instan langsung dari browser.
 | Tab | Deskripsi |
 |---|---|
 | **Brat Image** | Generate brat-style image dengan custom teks & blur level |
-| **Sticker Meme** | Upload foto + tambah caption atas & bawah |
+| **Sticker Meme** | Upload foto + tambah caption atas & bawah dengan font Impact/Anton |
+| **Ustadz Meme** | Generate meme dengan template foto ustadz + auto word wrap & font InterMedium |
 | **iPhone Chat** | Buat screenshot percakapan iPhone yang realistis |
 | **Carbon Code** | Generate code screenshot estetik via Carbon |
-
----
 
 ## Tech Stack
 
 ```
 Frontend    → HTML · CSS · Vanilla JavaScript
 Backend     → Vercel Serverless Functions
-Fonts       → Syne · DM Mono (Google Fonts)
+Canvas API  → Sticker Meme & Ustadz Meme (pure client-side, no backend)
+Fonts       → Syne · DM Mono · Anton · Inter Medium (Google Fonts + jsDelivr)
 Hosting     → Vercel
 Analytics   → Vercel Analytics
 ```
