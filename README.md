@@ -58,15 +58,40 @@ Generate konten visual secara instan langsung dari browser.
 
 ---
 
+### 03 — Image Tools
+Pengolah gambar bertenaga AI langsung dari browser.
+
+| Fitur | Deskripsi |
+|---|---|
+| **HD Upscale** | Perbesar resolusi gambar 2x atau 4x dengan AI |
+| **Remove Background** | Hapus background gambar secara otomatis |
+| **Watermark Remover** | Hapus watermark dari gambar |
+| **AI Image Editor** | Edit gambar dengan perintah teks berbasis AI |
+
+---
+
+### 04 — Deployer
+Deploy website HTML ke Vercel dalam hitungan detik — tanpa akun, tanpa setup.
+
+**Fitur:**
+- Upload file HTML via drag & drop
+- Custom subdomain `.vercel.app`
+- Quota harian 50 deploy dengan cooldown 5 menit per deploy
+- Auto-delete project terlama saat mencapai limit 180 project
+- Persistent quota & cooldown tracking via Upstash Redis
+
+---
+
 ## Tech Stack
 
 ```
-Frontend    → HTML · CSS · Vanilla JavaScript
-Backend     → Vercel Serverless Functions
-Canvas API  → Sticker Meme, Ustadz Meme, Brat Anime, Bang Jago (pure client-side, no backend)
-Fonts       → Syne · DM Mono · Anton · Inter Medium · Poppins Bold (Google Fonts + jsDelivr + GitHub Raw)
-Hosting     → Vercel
-Analytics   → Vercel Analytics
+Frontend      → HTML · CSS · Vanilla JavaScript
+Backend       → Vercel Serverless Functions
+Canvas API    → Sticker Meme, Ustadz Meme, Brat Anime, Bang Jago (pure client-side, no backend)
+Database      → Upstash Redis (quota & cooldown tracking)
+Fonts         → Syne · DM Mono · Anton · Inter Medium · Poppins Bold (Google Fonts + jsDelivr + GitHub Raw)
+Hosting       → Vercel
+Analytics     → Vercel Analytics
 ```
 
 ---
@@ -74,50 +99,12 @@ Analytics   → Vercel Analytics
 ## Pages
 
 ```
-/index.html       → Homepage + About + Tools listing
-/downloader.html  → Multi-platform media downloader
-/generator.html   → Visual content generator
-/developer.html   → Credits & colophon
-```
-
----
-
-## Team
-
-| | Name | Role |
-|---|---|---|
-| 👤 | **Ditzzx** | Publisher & Owner — ide, arah, dan semua keputusan product |
-| 🤖 | **Claude** (Anthropic) | AI Code Writer — semua HTML, CSS, JS, dan serverless functions |
-
----
-
-## Philosophy
-
-> *"Dua entitas, satu tujuan — bikin tools yang berguna dan keren."*
-
-Website ini bukan dibuat untuk terlihat sibuk. Setiap tool ada karena ada kebutuhan nyata, dan setiap baris kode ditulis dengan tujuan yang jelas.
-
----
-
-<div align="center">
-
-**© 2026 Ditzzx** · [ditzzx.my.id](https://ditzzx.my.id) · *Precision in every pixel*
-
-</div>
-Fonts       → Syne · DM Mono · Anton · Inter Medium (Google Fonts + jsDelivr)
-Hosting     → Vercel
-Analytics   → Vercel Analytics
-```
-
----
-
-## Pages
-
-```
-/index.html       → Homepage + About + Tools listing
-/downloader.html  → Multi-platform media downloader
-/generator.html   → Visual content generator
-/developer.html   → Credits & colophon
+/index.html        → Homepage + About + Tools listing
+/downloader.html   → Multi-platform media downloader
+/generator.html    → Visual content generator
+/image-tools.html  → AI-powered image processing
+/deployer.html     → Instant HTML deployer to Vercel
+/developer.html    → Credits & colophon
 ```
 
 ---
